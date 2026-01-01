@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<body class="bg-sky-500">
+    <div class="flex justify-center items-center h-screen">
+        <div class=" bg-white h-82 w-60 rounded-lg">
+
+            <div class="border-3 border-stone-200 rounded-sm w-54 bg-stone-100 h-12 mx-auto my-4" id="display">
+
+            </div>
+
+            <div class="flex justify-around  ">
+                <div class="bg-yellow-200 size-10 rounded-lg flex justify-center items-center" onclick="addOperator('+')">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="bg-yellow-200 size-10 rounded-lg flex justify-center items-center" onclick="addOperator('-')">
+                    <i class="fa-solid fa-minus"></i>
+                </div>
+                <div class="bg-yellow-200 size-10 rounded-lg flex justify-center items-center" onclick="addOperator('*')">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="bg-yellow-200 size-10 rounded-lg flex justify-center items-center" onclick="addOperator('/')">
+                    <i class="fa-solid fa-divide"></i>
+                </div>
+            </div>
+
+            <div class="flex justify-around pt-2 ">
+                <div class="bg-sky-200 size-10 rounded-lg flex justify-center items-center" onclick="addNumber('1')">
+                    1</div>
+                <div class="bg-sky-200 size-10 rounded-lg flex justify-center items-center" onclick="addNumber('2')">
+                    2</div>
+                <div class="bg-sky-200 size-10 rounded-lg flex justify-center items-center" onclick="addNumber('3')">
+                    3</div>
+                <div class="bg-sky-200 size-10 rounded-lg flex justify-center items-center" onclick="addNumber('4')">
+                    4</div>
+            </div>
+
+            <div class="flex justify-around pt-2">
+                <div class="bg-sky-200 size-10 rounded-lg flex justify-center items-center" onclick="addNumber('5')">
+                    5</div>
+                <div class="bg-sky-200 size-10 rounded-lg flex justify-center items-center" onclick="addNumber('6')">
+                    6</div>
+                <div class="bg-sky-200 size-10 rounded-lg flex justify-center items-center" onclick="addNumber('7')">
+                    7</div>
+                <div class="bg-sky-200 size-10 rounded-lg flex justify-center items-center" onclick="addNumber('8')">
+                    8</div>
+            </div>
+
+            <div class="flex justify-around pt-2 ">
+                <div class="bg-sky-200 size-10 rounded-lg flex justify-center items-center" onclick="addNumber('9')">
+                    9</div>
+                <div class="bg-sky-200 size-10 rounded-lg flex justify-center items-center" onclick="addNumber('0')">
+                    0</div>
+                <div class="bg-sky-200 size-10 rounded-lg flex justify-center items-center" onclick="addNumber('.')" >
+                    <button>.</button></div>
+                <div class="bg-red-500 size-10 rounded-lg flex justify-center items-center text-white" onclick="clearDisplay()">
+                    <button>C</button></div>
+            </div>
+
+            <div class="rounded-sm w-28 bg-green-400 h-10 m-3 flex justify-center items-center text-white text-2xl" onclick="calculate()">
+                =
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
